@@ -1,0 +1,67 @@
+.lin {
+  color: aliceblue;
+}
+.lin:hover {
+  text-decoration: none;
+  color: bisque;
+  text-decoration:underline;
+  font-weight: bolder;
+}
+.col {
+
+  padding: 25px;
+}
+.lasfoo {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+.bd {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+}
+.bd h1 {
+  text-align: center;
+  color: white;
+}
+
+
+#foot {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+.lin {
+  color: rgb(255, 255, 255);
+}
+.lin:hover {
+  text-decoration: none;
+  color: rgb(152, 155, 12);
+}
+.col {
+  background-color: rgb(78, 78, 78);
+  position: relative;
+
+  padding: 25px;
+}
+.foo {
+  padding-left: 40px;
+}
+.lasfoo {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+.bd {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+}
+.bd h1 {
+  text-align: center;
+  color: white;
+}
+.page-footer{
+  background-color: black;
+}
+
+    

@@ -1,0 +1,397 @@
+
+body {
+    font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background:rgb(23, 23, 83);
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #4b1010;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+.na {
+  animation: nav-load 300ms ease-in;
+}
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.nav1 {
+  background-color: black;
+}
+.a1:hover {
+  border-bottom: 2px solid;
+  transition: all 0.5s;
+  background-color: #555;
+  transition: height 0.9s ease-in;
+}
+.dr a {
+  color: white;
+}
+.na img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 770px) {
+  .dr {
+    background-color: rgba(66, 66, 66, 0.829);
+  }
+  .lis {
+    margin-left: -6rem;
+  }
+  .ul1 {
+    margin-left: -230px;
+  }
+  .ul1 a {
+    border-bottom: 1px solid;
+    padding-left: 30px;
+  }
+  .na a {
+    font-size: small;
+  }
+  .na img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  .na b {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .head {
+    margin-left: 74vw;
+  }
+  .ser {
+    height: 555px;
+  }
+}
+@media (max-width: 991px) {
+  .ul1 {
+    margin-left: -230px;
+  }
+  .ul1 a {
+    border-bottom: 1px solid;
+    padding-left: 30px;
+  }
+  .a1 {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1300px) {
+  .ul1 {
+    margin-left: -170px;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: calc(100vh - 110px);
+  background: url("../img/NEWS1.jpg") ;
+  background-position: center;
+  background-repeat: none;
+  position: relative;
+}
+
+
+
+@media (min-width: 700px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    text-align: center;
+  }
+  #hero .container {
+    padding-top: 40px;
+  }
+  #hero h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #191919;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #221919;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .section-title span {
+    font-size: 38px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  background-color: whitesmoke;
+}
+.about .content h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 15px;
+  padding-right: 4px;
+  color: #cc1616;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  width: 200px;
+     padding: 15px 0;
+     text-align: center;
+     margin: 20px 10px;
+     border-radius: 25px;
+     font-weight: bold;
+     border: 2px solid #009688;
+     background: transparent;
+     position: relative;
+     overflow: hidden;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/csm.jpeg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta h3 {
+  color: rgb(248, 250, 252);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: rgb(238, 234, 234);
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid rgb(226, 220, 220);
+  color: rgb(250, 247, 253);
+}
+
+.cta .cta-btn:hover {
+  background: #3491cf;
+  border: 2px solid #1a0707;
+}
+
+.lin {
+  color: aliceblue;
+  }
+  .lin:hover {
+    text-decoration: none;
+    color: bisque;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  .col {
+  padding: 25px;
+}
+.lasfoo {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+.bd {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+}
+.bd h1 {
+  text-align: center;
+  color: white;
+}
+
+#foot {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
+.lin {
+  color: rgb(230, 223, 223);
+}
+.lin:hover {
+  text-decoration: none;
+  color: bisque;
+}
+.col {
+  background-color: rgb(78, 78, 78);
+  position: relative;
+
+  padding: 25px;
+}
+.foo {
+  padding-left: 40px;
+}
+.lasfoo {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+.bd {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+}
+.bd h1 {
+  text-align: center;
+  color: white;
+}
