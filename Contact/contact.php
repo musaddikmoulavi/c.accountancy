@@ -2,12 +2,14 @@
 $name=$_POST['name'];
 $visitor_email=$_POST['email'];
 $subject = $_POST['subject'];
+$phone = $_POST['phone'];
 $message = $_POST['message'];
 
 $email_from = 'musaddikmoulavi@gmail.com';
 $email_subject = "New Form Submission";
 $email_body = "User Name: $name.\n".
                "Subject: $subject.\n".
+              "User Phone: $phone.\n".
               "User Email: $visitor_email.\n".
               "User Message: $message.\n";
 
