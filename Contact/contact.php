@@ -6,7 +6,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 $email_from = 'musaddikmoulavi@gmail.com';
-$email_subject = "New Form Submission";
+$email_subject = $_POST['subject'];
 $email_body = "User Name: $name.\n".
                "Subject: $subject.\n".
               "User Phone: $phone.\n".
